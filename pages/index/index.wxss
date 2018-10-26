@@ -1,0 +1,168 @@
+.chart-iframe{
+ width: 700rpx;
+ margin: 0 auto;
+  text-align: center;
+}
+.xiangge{
+    margin-bottom: 20px;
+}
+.btnbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btnbar view{
+    width: 150rpx;
+    height: 50rpx;
+    text-align: center;
+    color: #fff;
+    line-height: 50rpx;
+}
+.color1{
+    background: #00FFFF;
+}
+.color2{
+    background: #FF8400;
+}
+.color3{
+    background: #FF00FF;
+}
+canvas{
+    border-radius:10rpx;
+    overflow:hidden;
+}
+/**index.wxss**/
+
+page {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    height: 80rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 80rpx;
+    background: #f7f7f7;
+    font-size: 16px;
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.nav-item {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+}
+
+.nav-item.active {
+    color: red;
+}
+
+.tab-box {
+    background: greenyellow;
+    padding-top: 80rpx;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.tab-content {
+    overflow-y: scroll;
+}
+
+.btn-animation {
+    width: 300rpx;
+    height: 100rpx;
+    background: blue;
+    margin-bottom: 20rpx;
+    color: #fff;
+    font-size: 50rpx;
+    line-height: 100rpx;
+    text-align: center;
+    transition: all 0.5s;
+    position: relative;
+    border-radius: 10rpx;
+}
+
+.active-btn {
+    position: absolute;
+    background: blue;
+    border-radius: 10rpx;
+    /* border: 2rpx solid blue; */
+    width: 300rpx;
+    height: 100rpx;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.one {
+    width: 300rpx;
+    height: 100rpx;
+    background: #26d79b;
+    margin-bottom: 20rpx;
+    color: #fff;
+    font-size: 50rpx;
+    line-height: 100rpx;
+    text-align: center;
+    transition: all 0.5s;
+    position: relative;
+    border-radius: 10rpx;
+    /* overflow: hidden; */
+}
+
+.one .active-one {
+    position: absolute;
+    width: 30rpx;
+    height: 200rpx;
+    left: -60rpx;
+    top: -40rpx;
+    background: rgba(255, 255, 255, 0.5);
+    filter: (10rpx);
+    transform: rotate(30deg);
+}
+.main{
+    margin-top:100rpx; 
+}
+.animation_css {
+    width: 400rpx;
+    height: 100rpx;
+    background: rebeccapurple;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    line-height: 100rpx;
+    color: #fff;
+    font-size: 30rpx;
+    border-radius:10rpx; 
+}
+
+.animation_css view {
+    position: absolute;
+    height: 300rpx;
+    width: 50rpx;
+    background: rgba(255, 255, 255, 0.5);
+    left:-140rpx;
+    top: -50rpx;
+    transform: rotate(35deg);
+    filter:  blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.am-cc {
+    animation: myfirst 1s infinite;
+    animation-iteration-count:1;
+}
+
+
