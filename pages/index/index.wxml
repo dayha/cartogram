@@ -16,11 +16,24 @@
 
 
 <view class='main' wx:if="{{currentTab==1}}">
-   <view class='xiangge'>
-    <canvas canvas-id="week" style="width:{{cavasW}}px; height: {{cavasH}}px;margin:0 auto;" ></canvas>
-   </view>
+    <view class='xiangge'>
+        <canvas canvas-id="week" style="width:{{cavasW}}px; height: {{cavasH}}px;margin:0 auto;"></canvas>
+    </view>
 
     <view class='xiangge'>
-     <canvas canvas-id="moomd" style="width:{{cavasW}}px; height: {{cavasH}}px;margin:0 auto;" ></canvas>
+        <canvas canvas-id="moomd" style="width:{{cavasW}}px; height: {{cavasH}}px;margin:0 auto;"></canvas>
     </view>
+</view>
+<view class='main' wx:if="{{currentTab==2}}">
+    <view class='Ruler'>
+        <view class='Ruler_text'>
+            1234567891234567891234567891324567891324657981324657981324657981234567981324567891324567891234657891324567891324567982456789123465789132456789132456798
+        </view>
+    </view>
+    <view class='show_RulerText'>{{RulerText}}</view>
+    <movable-area style="height:100rpx;width: 600rpx;background: red;overflow: hidden;margin:auto;">
+        <movable-view bindchange="numberRul" direction="all" style="height:100rpx; width: 3000rpx; background: blue;  overflow: hidden;">
+1234567891234567891234567891324567891324657981324657981324657981234567981324567891324567891234657891324567891324567982456789123465789132456789132456798
+        </movable-view>
+    </movable-area>
 </view>

@@ -165,4 +165,25 @@ page {
     animation-iteration-count:1;
 }
 
-
+.Ruler{
+    width: 600rpx;
+    height: 100rpx;
+    background: #ccc;
+    overflow-x:scroll; 
+    margin: 0 auto;
+}
+.Ruler_text{
+    width: 3000rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    background: #459;
+    padding: 0 100rpx;
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.show_RulerText{
+    color:#666;
+    text-align:center;
+}
